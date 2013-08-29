@@ -19,6 +19,7 @@
 		43ABF35817CFF0E9009A557D /* DRReadWriteLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABF35517CFF0E9009A557D /* DRReadWriteLock.m */; };
 		43ABF35917CFF0E9009A557D /* NSLock+LockBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABF35617CFF0E9009A557D /* NSLock+LockBlocks.m */; };
 		43ABF35A17CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABF35717CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m */; };
+		43ABF35E17CFFF29009A557D /* LockBlocks.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 43ABF35D17CFFF29009A557D /* LockBlocks.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,9 @@
 		43ABF35517CFF0E9009A557D /* DRReadWriteLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRReadWriteLock.m; sourceTree = "<group>"; };
 		43ABF35617CFF0E9009A557D /* NSLock+LockBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLock+LockBlocks.m"; sourceTree = "<group>"; };
 		43ABF35717CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRecursiveLock+LockBlocks.m"; sourceTree = "<group>"; };
+		43ABF35B17CFFC80009A557D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		43ABF35C17CFFC80009A557D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		43ABF35D17CFFF29009A557D /* LockBlocks.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LockBlocks.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,16 @@
 		43ABF33A17CFF0AD009A557D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				43ABF33B17CFF0AD009A557D /* LockBlocks-Info.plist */,
-				43ABF33C17CFF0AD009A557D /* InfoPlist.strings */,
-				43ABF33F17CFF0AD009A557D /* main.m */,
-				43ABF34117CFF0AD009A557D /* LockBlocks-Prefix.pch */,
+				43ABF34917CFF0AD009A557D /* Default-568h@2x.png */,
 				43ABF34517CFF0AD009A557D /* Default.png */,
 				43ABF34717CFF0AD009A557D /* Default@2x.png */,
-				43ABF34917CFF0AD009A557D /* Default-568h@2x.png */,
+				43ABF33C17CFF0AD009A557D /* InfoPlist.strings */,
+				43ABF35B17CFFC80009A557D /* LICENSE */,
+				43ABF33B17CFF0AD009A557D /* LockBlocks-Info.plist */,
+				43ABF34117CFF0AD009A557D /* LockBlocks-Prefix.pch */,
+				43ABF33F17CFF0AD009A557D /* main.m */,
+				43ABF35C17CFFC80009A557D /* README.md */,
+				43ABF35D17CFFF29009A557D /* LockBlocks.podspec */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 				43ABF34617CFF0AD009A557D /* Default.png in Resources */,
 				43ABF34817CFF0AD009A557D /* Default@2x.png in Resources */,
 				43ABF34A17CFF0AD009A557D /* Default-568h@2x.png in Resources */,
+				43ABF35E17CFFF29009A557D /* LockBlocks.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +317,7 @@
 				43ABF34F17CFF0AD009A557D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
