@@ -25,6 +25,8 @@ With LockBlocks you use the block-based methods that call lock and unlock for yo
 
 This more clearly delineates what is a critical section of your code, and helps avoid forgetting to release the lock.
 
+LockBlocks also adds an Objective-C version of a Read/Write Lock (implemented using pthreads). This allows you to use exclusive/non-exclusive locks. Please read the important note about re-entrancy (recursion) in *DRReadWriteLock.h*.
+
 Installation
 ------------
 
