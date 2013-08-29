@@ -16,6 +16,9 @@
 		43ABF34617CFF0AD009A557D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 43ABF34517CFF0AD009A557D /* Default.png */; };
 		43ABF34817CFF0AD009A557D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43ABF34717CFF0AD009A557D /* Default@2x.png */; };
 		43ABF34A17CFF0AD009A557D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43ABF34917CFF0AD009A557D /* Default-568h@2x.png */; };
+		43ABF35817CFF0E9009A557D /* DRReadWriteLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABF35517CFF0E9009A557D /* DRReadWriteLock.m */; };
+		43ABF35917CFF0E9009A557D /* NSLock+LockBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABF35617CFF0E9009A557D /* NSLock+LockBlocks.m */; };
+		43ABF35A17CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ABF35717CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,13 @@
 		43ABF34517CFF0AD009A557D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		43ABF34717CFF0AD009A557D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		43ABF34917CFF0AD009A557D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		43ABF35117CFF0E9009A557D /* DRLocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRLocking.h; sourceTree = "<group>"; };
+		43ABF35217CFF0E9009A557D /* DRReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRReadWriteLock.h; sourceTree = "<group>"; };
+		43ABF35317CFF0E9009A557D /* NSLock+LockBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLock+LockBlocks.h"; sourceTree = "<group>"; };
+		43ABF35417CFF0E9009A557D /* NSRecursiveLock+LockBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRecursiveLock+LockBlocks.h"; sourceTree = "<group>"; };
+		43ABF35517CFF0E9009A557D /* DRReadWriteLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRReadWriteLock.m; sourceTree = "<group>"; };
+		43ABF35617CFF0E9009A557D /* NSLock+LockBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLock+LockBlocks.m"; sourceTree = "<group>"; };
+		43ABF35717CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRecursiveLock+LockBlocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		43ABF33917CFF0AD009A557D /* LockBlocks */ = {
 			isa = PBXGroup;
 			children = (
+				43ABF35017CFF0BE009A557D /* Classes */,
 				43ABF34217CFF0AD009A557D /* DRAppDelegate.h */,
 				43ABF34317CFF0AD009A557D /* DRAppDelegate.m */,
 				43ABF33A17CFF0AD009A557D /* Supporting Files */,
@@ -97,6 +108,20 @@
 				43ABF34917CFF0AD009A557D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43ABF35017CFF0BE009A557D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43ABF35117CFF0E9009A557D /* DRLocking.h */,
+				43ABF35217CFF0E9009A557D /* DRReadWriteLock.h */,
+				43ABF35517CFF0E9009A557D /* DRReadWriteLock.m */,
+				43ABF35317CFF0E9009A557D /* NSLock+LockBlocks.h */,
+				43ABF35617CFF0E9009A557D /* NSLock+LockBlocks.m */,
+				43ABF35417CFF0E9009A557D /* NSRecursiveLock+LockBlocks.h */,
+				43ABF35717CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +192,9 @@
 			files = (
 				43ABF34017CFF0AD009A557D /* main.m in Sources */,
 				43ABF34417CFF0AD009A557D /* DRAppDelegate.m in Sources */,
+				43ABF35817CFF0E9009A557D /* DRReadWriteLock.m in Sources */,
+				43ABF35917CFF0E9009A557D /* NSLock+LockBlocks.m in Sources */,
+				43ABF35A17CFF0E9009A557D /* NSRecursiveLock+LockBlocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

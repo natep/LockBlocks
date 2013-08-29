@@ -7,6 +7,9 @@
 //
 
 #import "DRAppDelegate.h"
+#import "DRReadWriteLock.h"
+#import "NSLock+LockBlocks.h"
+#import "NSRecursiveLock+LockBlocks.h"
 
 @implementation DRAppDelegate
 
@@ -16,6 +19,21 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	
+	NSLock* lock = [[NSLock alloc] init];
+	
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[lock executeInLock:^{
+			NSLog(@"block 1");
+		}];
+	});
+	
+	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+		[lock executeInLock:^{
+			NSLog(@"block 2");
+		}];
+	});
+	
     return YES;
 }
 
