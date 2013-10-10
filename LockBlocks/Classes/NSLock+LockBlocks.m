@@ -12,14 +12,22 @@
 
 - (void)executeInLock:(void(^)())block {
 	[self lock];
-	block();
-	[self unlock];
+	@try {
+		block();
+	}
+	@finally {
+		[self unlock];
+	}
 }
 
 - (BOOL)tryToExecuteInLock:(void(^)())block {
 	if ([self tryLock]) {
-		block();
-		[self unlock];
+		@try {
+			block();
+		}
+		@finally {
+			[self unlock];
+		}
 		return YES;
 	} else {
 		return NO;
