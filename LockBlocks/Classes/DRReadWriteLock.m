@@ -78,14 +78,22 @@
 
 - (void)executeInWriteLock:(void(^)())block {
 	[self writeLock];
-	block();
-	[self unlock];
+	@try {
+		block();
+	}
+	@finally {
+		[self unlock];
+	}
 }
 
 - (BOOL)tryToExecuteInWriteLock:(void(^)())block {
 	if ([self tryWriteLock]) {
-		block();
-		[self unlock];
+		@try {
+			block();
+		}
+		@finally {
+			[self unlock];
+		}
 		return YES;
 	} else {
 		return NO;
@@ -115,14 +123,22 @@
 
 - (void)executeInReadLock:(void(^)())block {
 	[self readLock];
-	block();
-	[self unlock];
+	@try {
+		block();
+	}
+	@finally {
+		[self unlock];
+	}
 }
 
 - (BOOL)tryToExecuteInReadLock:(void(^)())block {
 	if ([self tryReadLock]) {
-		block();
-		[self unlock];
+		@try {
+			block();
+		}
+		@finally {
+			[self unlock];
+		}
 		return YES;
 	} else {
 		return NO;
